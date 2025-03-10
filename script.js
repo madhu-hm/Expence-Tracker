@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const category = categorySelect.value;
         const amount = parseFloat(amountInput.value);
 
-        if (!date || !category || isNaN(amount)) {
+        if (!date || !category || isNaN(amount) ||amount<0) {
             alert('Please fill in all fields.');
             return;
         }
